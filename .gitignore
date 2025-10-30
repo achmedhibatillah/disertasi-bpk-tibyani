@@ -1,6 +1,3 @@
-# =====================
-# LaTeX build artifacts
-# =====================
 *.aux
 *.log
 *.toc
@@ -17,9 +14,7 @@
 *.vrb
 *.xdv
 
-# Latexmk temporary files
 latexmkrc
 
-# Output folders (opsional)
 _build/
 output/
