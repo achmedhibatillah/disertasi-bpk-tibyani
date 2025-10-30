@@ -1,0 +1,104 @@
+\chapter{METODE PENELITIAN}
+
+\section{Tahapan Penelitian}
+
+Secara garis besar, tahapan untuk melakukan penelitian ini dibagi menjadi:
+
+\begin{enumerate}
+    \item \textbf{Tahap persiapan}: Identifikasi dan perumusan masalah.
+    \item \textbf{Tahap pengumpulan dan pengolahan data}.
+    \item \textbf{Tahap analisis dan pembahasan}.
+    \item \textbf{Kesimpulan}.
+\end{enumerate}
+
+Tahapan-tahapan yang dilakukan pada penelitian ini digambarkan pada Gambar.
+
+\begin{enumerate}
+    \item \textbf{Tahap Identifikasi dan Perumusan Masalah}
+
+        \setlength{\parindent}{1cm}
+
+        Pada tahap ini, konsep proposal yang telah disusun direview kembali, terutama yang terkait dengan kajian literatur dan metodologi. Hal ini dilakukan untuk memastikan bahwa hasil kajian teori yang digunakan cukup kuat sebagai dasar argumentasi atau pijakan dalam penelitian ini. Selain itu, juga dimaksudkan agar metodologi yang akan dipakai dapat diimplementasikan dalam penelitian ini.
+
+        Tahapan identifikasi masalah dilakukan untuk mengidentifikasi permasalahan yang akan diteliti. Melalui studi literatur ditemukan bahwa perlunya dilakukan penyesuaian komponen pembelajaran ataupun metode pembelajaran bagi pelajar berdasarkan perilaku dan tingkat pengetahuan mereka \citep{Ahmad2015}. 
+
+    \item \textbf{Tahap Pengumpulan dan Pengolahan Data}
+
+        Data yang digunakan pada penelitian ini berupa data log aktivitas yang dikumpulkan dari aktivitas belajar siswa sekolah dasar di Jepang berusia 6 tahun pada sistem media pembelajaran \textit{MONSAKUN}. \textit{MONSAKUN} dirancang sebagai media pembelajaran interaktif untuk \textit{problem-posing} berdasarkan model \textit{triplet structure} \citep{Hirashima2014}. 
+
+        Pemilihan data digunakan untuk melakukan seleksi dari kumpulan data menjadi data yang hanya sesuai dengan kebutuhan penelitian. Pada penelitian ini digunakan hanya data log aktivitas level 5 dari sistem pembelajaran \textit{MONSAKUN}. Hal ini dikarenakan rata-rata langkah dan kesalahan pada level 5 jauh lebih tinggi jika dibandingkan dengan level 1 hingga level 4, sehingga dapat dikatakan bahwa level 5 lebih menantang jika dibandingkan level lainnya (Supianto, et al., 2016).
+
+        Pengolahan data dilakukan untuk merubah bentuk data menjadi bentuk yang dibutuhkan dalam penelitian. Pada tahapan ini data log aktivitas pelajar yang masih berbentuk data sequence diubah menjadi data dengan fitur-fitur yang sesuai dengan kebutuhan penelitian. Fitur-fitur dari data yang digunakan pada penelitian ini berupa:
+
+        \begin{enumerate}
+            \renewcommand{\labelenumii}{\arabic{enumii}.}
+            \item Id pelajar: Berisi variabel \textit{primary key} yang membedakan tiap-tiap pelajar.
+            \item Lama: Berisi waktu pengerjaan tugas oleh pelajar dalam satuan detik.
+            \item Langkah: Berisi jumlah langkah (\textit{set} dan \textit{remove}) yang dilakukan pelajar.
+            \item \textit{Set}: Berisi jumlah langkah \textit{set} yang dilakukan pelajar.
+            \item \textit{Remove}: Berisi jumlah langkah \textit{remove} yang dilakukan pelajar.
+            \item C1: Berisi jumlah penggunaan kartu 1 oleh pelajar.
+            \item C2: Berisi jumlah penggunaan kartu 2 oleh pelajar.
+            \item C3: Berisi jumlah penggunaan kartu 3 oleh pelajar.
+            \item C4: Berisi jumlah penggunaan kartu 4 oleh pelajar.
+            \item C5: Berisi jumlah penggunaan kartu 5 oleh pelajar.
+            \item C6: Berisi jumlah penggunaan kartu 6 oleh pelajar.
+            \item \textit{Unique}: Berisi jumlah susunan kartu unik yang digunakan pelajar.
+            \item \textit{Error}: Berisi jumlah \textit{error} selama pengerjaan tugas.
+        \end{enumerate}
+
+        Id pelajar, lama proses pengerjaan (detik), jumlah langkah, jumlah \textit{set}, jumlah \textit{remove}, jumlah penggunaan kartu 1, jumlah penggunaan kartu 2, jumlah penggunaan kartu 3, jumlah penggunaan kartu 4, jumlah penggunaan kartu 5, jumlah penggunaan kartu 6, jumlah susunan yang unik dan jumlah kesalahan yang diperlihatkan pada Tabel 4.2.
+
+        Pada tahapan perancangan dilakukan manualisasi singkat dari penerapan algoritme dan pembuatan rancangan dari penerapan algoritme untuk menyelesaikan masalah yang diangkat pada penelitian: Sistem penasehat pembelajaran guru dalam \textit{problem posing} melalui integrasi kalimat cerita aritmatika menggunakan \textit{self-organizing map-m-ary tree (SOM-m-aT)}. Perancangan program utama ini digunakan sebagai acuan pada tahapan implementasi. Pada tahapan implementasi dilakukan penerapan algoritme \textit{SOM-m-aT}. 
+
+    \item \textbf{Tahap Analisis dan Pembahasan}
+
+        \textit{Quantization Error (QE)} adalah perbedaan antara nilai asli dari sebuah sinyal dan nilai yang diambil setelah melalui proses \textit{quantization}. \textit{Quantization} adalah proses pembagian sebuah sinyal analog menjadi beberapa level digital, dan \textit{QE} adalah perbedaan antara nilai asli sinyal dan nilai dikuantisasinya. \textit{Topographic Error (TE)} adalah perbedaan antara lokasi sebenarnya dari sebuah titik data dan lokasi yang ditempatkan pada peta topografi atau model spasial lainnya. \textit{TE} biasanya digunakan dalam aplikasi survei geospasial dan pemetaan untuk menentukan akurasi pemetaan. Kedua jenis \textit{error} ini penting untuk dipertimbangkan dalam sistem pengolahan data dan pemetaan, karena dapat mempengaruhi hasil akhir dan keakuratan data yang diperoleh.
+
+        \textit{Kohonen} menciptakan \textit{SOM}, sebuah jenis jaringan syaraf tiruan (\textit{JST}), pada tahun 1980-an. \textit{SOM} telah diterapkan secara efektif di beberapa bidang, termasuk kuantisasi vektor, pengenalan pola, analisis teks lengkap, analisis gambar, regresi, dan diagnostik kesalahan. \textit{SOM}, sebuah jaringan syaraf, memetakan data berdimensi tinggi ke dalam ruang berdimensi lebih rendah, yang diwakili oleh kisi-kisi neuron yang terhubung ke vektor \textit{codebook} dengan dimensi yang sama dengan data input. Setelah itu ditentukan 10 siswa terdekat dengan siswa ke-i pada semua \textit{assignment} dalam data ini terdapat 12. Proses selanjutnya memilih siswa dengan kemunculan minimal 7 kali. Kemudian memilih siswa terjelek dengan mengikuti empat kriteria: kesalahan terbanyak, nilai C4, C5, C6, jumlah langkah dan lama waktu seperti digambarkan pada Gambar 4.2.
+
+        Analisis yang dilakukan pada penelitian ini adalah tentang seberapa baik penerapan algoritme \textit{SOM-m-aT} untuk melakukan pengelompokan pelajar berdasarkan data aktivitasnya dan perbandingan hasil pengelompokan yang terbentuk antara algoritme \textit{SOM-m-aT} dengan metode \textit{SOM}. Analisis Sistem penasehat pembelajaran guru dalam \textit{problem posing} melalui integrasi kalimat cerita aritmatika menggunakan \textit{self-organizing map-m-aT}.
+
+        Diagram \textit{use case} pada Gambar 4.3 menggambarkan semua pelaku (siswa dan guru) dengan interaksi utama mereka yang menggambarkan fungsionalitas sistem. Fungsi setiap penggunaan kasus dijelaskan sebagai berikut:
+
+        \begin{enumerate}
+            \renewcommand{\labelenumii}{\arabic{enumii}.}
+            \item \textit{Student}: Sekelompok orang yang bertindak sebagai siswa.
+            \item \textit{Adviser}: Kelas orang yang bertindak sebagai penasehat untuk siswa.
+            \item \textit{Update}: Mencakup semua tindakan yang diperlukan untuk pembimbing untuk menanggapi percakapan dari siswa dan juga untuk memperbarui sistem.
+            \item \textit{Performance Analysis}: Identifikasi siswa yang masuk prestasi akademik dari catatan akademik.
+            \item \textit{Generate report}: Menggunakan hasil kinerja analisis untuk menghasilkan laporan bagi siswa.
+            \item \textit{Retrieve Information}: Ini mencakup semua tindakan yang diperlukan untuk siswa dalam mendapatkan informasi yang berkaitan dengan proses akademik mereka.
+            \item \textit{Contact}: Ini mencakup semua tindakan yang diperlukan untuk siswa untuk meminta percakapan dengan penasehat mereka.
+        \end{enumerate}
+
+        \textbf{Analisis Adopsi di Indonesia}
+
+        Beberapa mekanisme yang diterapkan untuk memfasilitasi adopsi pengalaman belajar siswa sekolah dasar menggunakan media pembelajaran digital interaktif \textit{Monsakun Problem posing} menyusun soal cerita aritmatika. Berikut adalah beberapa mekanismenya :
+
+        \begin{enumerate}
+            \renewcommand{\labelenumii}{\arabic{enumii}.}
+            \item \textit{Pembentukan Budaya Belajar}: Di Jepang, penting bagi siswa untuk membentuk budaya belajar yang baik sejak dini. Dalam hal ini, media pembelajaran digital interaktif \textit{Monsakun Problem posing} menyusun soal cerita aritmatika dapat membantu siswa memahami dan mengintegrasikan konsep matematika dengan cara yang menyenangkan dan interaktif.
+            \item \textit{Kolaborasi Siswa}: Media pembelajaran ini memfasilitasi kolaborasi siswa dalam belajar dan berbagi solusi masalah matematika. Ini membantu siswa belajar dari satu sama lain dan meningkatkan hasil belajar mereka.
+            \item \textit{Pembelajaran Terpadu}: Media pembelajaran digital interaktif \textit{Monsakun Problem posing} menyusun soal cerita aritmatika memungkinkan pembelajaran matematika terpadu dengan berbagai materi pelajaran lainnya, seperti sosiologi, sejarah, dan geografi.
+            \item \textit{Evaluasi Berkala}: Guru dapat melakukan evaluasi berkala dan memantau perkembangan siswa dengan menggunakan data yang disediakan oleh media pembelajaran digital ini. Ini membantu guru mengidentifikasi area yang perlu ditingkatkan dan membuat rencana pembelajaran yang lebih efektif.
+            \item \textit{Pendekatan Personalisasi}: Media pembelajaran digital interaktif \textit{Monsakun Problem posing} menyusun soal cerita aritmatika memungkinkan pembelajaran yang lebih personalisasi dengan menyesuaikan tingkat kesulitan dan gaya belajar siswa.
+        \end{enumerate}
+
+    \item \textbf{Penarikan Kesimpulan}
+
+        Setelah semua tahapan-tahapan sebelumnya selesai dilakukan, selanjutnya dilakukan tahapan penarikan kesimpulan berdasarkan hasil analisis yang dilakukan pada tahapan sebelumnya dan menjawab pertanyaan pada bagian rumusan masalah yang berhubungan dengan Sistem penasehat pembelajaran oleh guru dalam \textit{problem posing} melalui integrasi kalimat cerita aritmatika menggunakan \textit{self-organizing map-m-ary tree (SOM-m-aT)}.
+\end{enumerate}
+
+\section{Analisis Kinerja}
+
+Untuk menguji kinerja dari sistem, dipergunakan :
+
+\begin{enumerate}
+    \item Analisis proses pengelompokan siswa dalam \textit{problem posing} melalui integrasi kalimat cerita aritmatika menggunakan \textit{self-organizing map-m-ary tree (SOM-m-aT)}.
+    \item Analisis penasehat pembelajaran oleh guru dalam \textit{problem posing} melalui integrasi kalimat cerita aritmatika menggunakan \textit{self-organizing map-m-ary tree (SOM-m-aT)}.
+\end{enumerate}
+
+\section{Matriks Rencana Penelitian}
+
+Penelitian ini direncanakan dalam waktu 19 bulan ke depan, seperti terlihat pada Tabel 4.3. Tahap awal yang dilakukan setelah melakukan studi terhadap penelitian sebelumnya adalah melakukan pengumpulan data yang akan dipergunakan pada penelitian. Pengambilan fitur berdasarkan masukan dari Pakar ataupun dari penelitian pendahulu. Tahap berikutnya menggunakan fitur yang sudah diperoleh sebagai masukan untuk metode \textit{SOM-m-aT}. Luaran dari penelitian ini adalah 2 konferensi internasional, minimal 1 artikel untuk prosiding konferensi internasional dan 2 artikel untuk jurnal internasional bereputasi terindeks scopus.
